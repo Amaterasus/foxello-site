@@ -5,10 +5,12 @@ import './App.css';
 import Projects from './Pages/Projects';
 import ContactUs from './Pages/ContactUs';
 import AboutUs from './Pages/AboutUs';
+import Nav from "./Components/nav"
 
 const App = () => {
   return (
     <div className="App">
+      <Nav />
       <Switch>
         <Route exact path="/" >
           <Home />
