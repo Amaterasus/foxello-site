@@ -5,12 +5,13 @@ import './App.css';
 import Projects from './Pages/Projects';
 import ContactUs from './Pages/ContactUs';
 import AboutUs from './Pages/AboutUs';
-import Nav from "./Components/nav"
+import NavBar from "./Components/NavBar"
+import Footer from './Components/footer';
 
 const App = () => {
   return (
     <div className="App">
-      <Nav />
+      <NavBar />
       <Switch>
         <Route exact path="/" >
           <Home />
@@ -26,6 +27,7 @@ const App = () => {
         </Route>
         <Redirect to="/" />
       </Switch>
+      <Footer />
     </div>
   );
 }
