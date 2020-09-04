@@ -1,13 +1,20 @@
-import React from "react"
-
+import React from "react";
+import Welcome from "../Components/Welcome";
+import CTAHome1 from "../Components/CTAHome1";
+import Values from "../Components/Values";
+import Services from "../Components/Services";
+import CTAHome2 from "../Components/CTAHome2";
 
 const Home = () => {
+  return (
+    <div className="home">
+      <Welcome />
+      <CTAHome1 />
+      <Values />
+      <Services />
+      <CTAHome2 />
+    </div>
+  );
+};
 
-    return (
-    <div>
-        THIS IS THE HOME PAGE! IT'S NOT LIKE THE OTHER PAGES THIS ONE IS MINE!
-    </div>)
-
-}
-
-export default Home
+export default Home;

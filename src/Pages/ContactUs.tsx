@@ -1,13 +1,16 @@
-import React from "react"
-
+import React from "react";
+import { contactUsContent } from "../utilities/Strings";
+import ContactUsForm from "../Components/ContactUsForm";
+import ContactUsInfo from "../Components/ContactUsInfo";
 
 const ContactUs = () => {
-
-    return (
+  return (
     <div>
-        THIS IS THE CONTACT US PAGE! IT'S NOT LIKE THE OTHER PAGES THIS ONE IS MINE!
-    </div>)
+      <h2>{contactUsContent.heading}</h2>
+      <ContactUsForm />
+      <ContactUsInfo />
+    </div>
+  );
+};
 
-}
-
-export default ContactUs
+export default ContactUs;

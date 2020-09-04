@@ -1,13 +1,14 @@
-import React from "react"
-
+import React from "react";
+import AboutTheCompany from "../Components/AboutTheCompany";
+import AboutThePeople from "../Components/AboutThePeople";
 
 const AboutUs = () => {
+  return (
+    <div className="aboutUs">
+      <AboutTheCompany />
+      <AboutThePeople />
+    </div>
+  );
+};
 
-    return (
-    <div>
-        THIS IS THE  PAGE! IT'S NOT LIKE THE OTHER PAGES THIS ONE IS MINE!
-    </div>)
-
-}
-
-export default AboutUs
+export default AboutUs;
