@@ -1,6 +1,16 @@
-import React from "react";
+import React, { FC }from "react";
 
-const DisplayProjects = ({ products }) => {
+interface DisplayProjectsProps {
+  products: Array<Product>
+}
+
+type Product = {
+  src: string
+  title: string
+  content: string
+}
+
+const DisplayProjects: FC<DisplayProjectsProps> = ({ products }) => {
   return (
     <div className="grid">
       {products[0] ? (
